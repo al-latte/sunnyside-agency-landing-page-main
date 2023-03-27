@@ -1,0 +1,278 @@
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+	height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+	line-height: 1.5;
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	color: hsl(232, 10%, 55%);
+	-webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+header {
+	background-image: url("./images/mobile/image-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 80vh;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-inline: auto;
+	padding-block: 2em;
+	padding-inline: 1em;
+	position: relative;
+}
+
+/* .primary-nav {
+	position: absolute;
+	inset: 50px 0 0 50%;
+} */
+
+.primary-nav {
+	display: none;
+}
+
+.hero {
+	margin-top: 2.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 2em;
+}
+
+.hero > h1 {
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+.transform {
+	padding: 2.5em 1.5em;
+	text-align: center;
+}
+
+.stand-out {
+	padding: 2.5em 1.5em;
+	text-align: center;
+}
+
+.transform a,
+.stand-out a {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	text-decoration: underline;
+
+	color: hsl(212, 27%, 19%);
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.transform p,
+.stand-out p {
+	margin-block: 1.5em;
+}
+
+.bold-txt-900 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 2rem;
+	color: hsl(212, 27%, 19%);
+}
+
+.graphic-design p {
+	font-size: 0.9rem;
+	color: hsl(167, 40%, 24%);
+}
+
+#graphic {
+	font-size: 1.5rem;
+	color: hsl(167, 40%, 24%);
+	text-transform: capitalize;
+	margin-bottom: 1em;
+}
+
+.graphic-design {
+	background-image: url("./images/mobile/image-graphic-design.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding: 2.5em 1.5em;
+	text-align: center;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.photography p {
+	font-size: 0.9rem;
+	color: hsl(167, 40%, 24%);
+}
+
+#photo {
+	font-size: 1.5rem;
+	color: hsl(198, 62%, 26%);
+	text-transform: capitalize;
+	margin-bottom: 1em;
+}
+
+.photography {
+	background-image: url("./images/mobile/image-photography.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding: 2.5em 1.5em;
+	text-align: center;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.testimonials {
+	padding: 2.5em 1.5em;
+	text-align: center;
+}
+
+.testimonials h2 {
+	text-transform: uppercase;
+	margin-bottom: 2em;
+	font-family: "Fraunces", serif;
+	font-size: 1rem;
+	letter-spacing: 5px;
+	color: hsl(210, 4%, 67%);
+}
+
+.testimony {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 30px;
+	padding-block: 2em;
+}
+.pro {
+	color: hsl(210, 4%, 67%);
+	font-size: 0.9rem;
+}
+
+.testimony p > span {
+	font-family: "Fraunces", serif;
+	font-size: 1.2rem;
+	color: hsl(212, 27%, 19%);
+	font-weight: 900;
+}
+
+.testimony img {
+	width: 70px;
+	border-radius: 50px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+	padding: 4em 1.5em;
+	background-color: hsl(167, 44%, 70%);
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer-nav img {
+	fill: black;
+}
+
+.secondary {
+	display: flex;
+	gap: 50px;
+	margin-block: 2em 4em;
+}
+
+.f-nav-items {
+	list-style: none;
+	text-decoration: none;
+}
+.f-nav-items a {
+	color: #458c7e;
+	text-decoration: none;
+	display: flex;
+}
+
+.socials {
+	display: flex;
+	gap: 20px;
+}
+@media (min-width: 768px) {
+	header {
+		background-image: url("./images/desktop/image-header.jpg");
+	}
+}
