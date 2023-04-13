@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Version](images/sunnyside%20landing%20page%20desktop.png)
+![Mobile Version](images/sunnyside%20landing%20page%20mobile.png)
 
 ### Links
 
